@@ -1,0 +1,195 @@
+﻿/* 
+   Spotted Wren Garden Center style sheet 
+   Filename: styles.css
+
+   Author:   Adam Rabbani
+   Date:     3/19/23
+   HTML5 and CSS3 Illustrated Unit F, Independent Challenge 1
+ */
+
+/* reset styles */
+html {
+   font-size: 12px;
+}
+article, body, div, footer, header, h1, h2, h3, nav, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* global styles */
+p {
+   margin: 0.4em 0;
+   font-size: 1.2em;
+}
+
+/* body and page container */
+body {
+   font-family: Lato, Arial, Helvetica, sans-serif;
+   background-color: #ffff;
+}
+.container {
+   min-width: 100%;
+   border: 0;
+   margin: 0 auto;
+   background-color: #0099f1;
+   position: relative;
+}
+
+/* skip navigation link */
+p.skipnavigation {
+    margin: 0;
+}
+  
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+  
+p.skipnavigation a:focus {
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 0.4em;
+    right: 0.4em;
+    left: auto;
+    z-index: 2;
+}
+  
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: #005a8c;
+   text-align: center;
+}
+h1 {
+   font-weight: 700;
+   font-size: 3em;
+}
+header p {
+   color: rgb(241,90,36);
+}
+
+/* site navigation */
+nav.sitenavigation {
+    background-color: #0081cb;
+    text-align: center;
+}
+  
+nav.sitenavigation p {
+    display: inline-block;
+    margin: 0.4em 0.6em;
+    font-size: 1.6em;
+}
+  
+nav.sitenavigation a {
+    text-decoration: none;
+}
+  
+nav.sitenavigation a:visited {
+    color: white;
+}
+  
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+    text-shadow: 1px -1px 0 black;
+    text-decoration: underline;
+    opacity: 0.7;
+}
+  
+nav.sitenavigation a:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+  
+/* main content */
+article {
+   min-width: 80%;
+   max-width: 800px;
+   margin: 1em auto;
+   padding: 2%;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.89);
+}
+h2 {
+   margin: 0 0 0.4em;
+   font-size: 2.3em;
+   font-weight: 700;
+   text-decoration: underline;
+}
+h3 {
+   font-size: 1.7em;
+   text-decoration: underline;
+   text-align: left;
+}
+h4{
+   font-size: 1.5em;
+   text-align: left;
+}
+p {
+   font-size: 1.3em;
+}
+li {
+   font-size: 1.3em;
+   text-align: left;
+}
+aside{
+   border: 0;
+   text-align: center;
+   
+   width: 30%;
+   padding-left: 15px;
+   margin-left: 15px;
+   float: right;
+}
+img{
+   display: inline-block;
+}
+.social:hover{
+   opacity: 0.7;
+}
+
+/* main content tables */
+table{
+   width: 800px;
+   padding: 0.5em;
+   margin: 1em auto;
+}
+
+tbody{
+   font-size: 1.4em;
+}
+th{
+   padding-left: 30px;
+   font-weight: bold;
+   font-size: 1.6em;
+   text-align: left;
+}
+td{
+   min-width: fit-content;
+   padding-left: 2%;
+}
+/* footer section */
+footer {
+   padding: 0.5em;
+   background-color: #0081cb;
+   text-align: center;
+   clear: both;
+}
+
+/* print styles */
+@media print {
+   .container, h1, h2, header p, p {
+      color: black;
+      background-color: white;
+   }
+   nav {
+    display: none;
+   }
+}
+
+@page {
+   margin: 1in;
+}
